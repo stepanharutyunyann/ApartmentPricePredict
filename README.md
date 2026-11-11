@@ -19,33 +19,4 @@ approximate 2022 rates (`USD 1`, `AMD 1/400`, `RUB 1/65`, `EUR 1.05`). Rental li
 4. Models: region-median baseline, Ridge, Random Forest, Gradient Boosting (randomized search, 5-fold CV).
 5. Model chosen by cross-validation on the training set; the test set is used once.
 6. Interpretation: permutation importance, partial dependence, depth-3 decision tree.
-
-## Results (test set)
-Fill this table from `results.csv` after running the notebook:
-
-| Model | R2 (log price) | Median abs. % error |
-|---|---|---|
-| Region median (baseline) | | |
-| Ridge | | |
-| Random forest | | |
-| Gradient boosting | | |
-
-Key findings: *(2-3 bullet points: which features matter most, how much trees improve on the linear
-model, what the typical error is)*.
-
-Figures are in `figures/`.
-
-## How to run
-```bash
-git clone https://github.com/<your-username>/apartment-price-prediction.git
-cd apartment-price-prediction
-python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-jupyter notebook
-```
-The data file is looked up in `data/` automatically; set `APARTMENTS_CSV=/path/to/file.csv` to override.
-
-## Limitations
-- Listings cover only three weeks, so time effects are not modeled.
-- A small share of listings have implausible prices; results are reported on all test rows and on plausible rows.
-- Region 1 contains ~90% of the listings; other regions are small.
+   
