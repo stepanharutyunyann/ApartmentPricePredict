@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# secrets
+.env
+
+# Data: the CSV is ~4 MB, so committing it is fine. If you do not want to publish it,
+# uncomment the next line and describe in the README where to download it.
+# data/*.csv
